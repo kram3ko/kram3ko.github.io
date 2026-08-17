@@ -354,6 +354,59 @@ h1 em {
   font-size: 13px;
 }
 
+.integration-ecosystem {
+  display: grid;
+  grid-template-columns: 0.7fr 2.3fr;
+  gap: 42px;
+  margin-top: 16px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  background: linear-gradient(125deg, var(--navy), #1d315e 68%, #174d59);
+  box-shadow: 0 22px 55px rgba(17, 26, 50, 0.16);
+}
+
+.ecosystem-heading > span {
+  display: block;
+  color: #8fb0ff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ecosystem-heading p {
+  max-width: 290px;
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+}
+
+.ecosystem-grid div {
+  display: grid;
+  gap: 7px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(143, 176, 255, 0.35);
+}
+
+.ecosystem-grid strong {
+  color: #fff;
+  font: 700 12px/1.2 var(--display);
+}
+
+.ecosystem-grid span {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
 .about,
 .expertise,
 .work {
@@ -880,6 +933,11 @@ a.project {
     border-bottom: 1px solid var(--line);
   }
 
+  .integration-ecosystem {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
   .about-content,
   .work-heading,
   .contact {
@@ -962,6 +1020,15 @@ a.project {
   .metrics div {
     min-height: 106px;
     padding: 23px 14px;
+  }
+
+  .integration-ecosystem {
+    padding: 24px;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .expertise-card,
