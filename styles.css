@@ -677,27 +677,27 @@ a.project {
 }
 
 .lightbox-close {
-  top: -18px;
-  right: -18px;
-  width: 42px;
-  height: 42px;
-  font-size: 28px;
+  top: -22px;
+  right: -22px;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
 }
 
 .lightbox-nav {
   top: 50%;
-  width: 48px;
-  height: 48px;
-  font-size: 36px;
+  width: 66px;
+  height: 66px;
+  font-size: 48px;
   transform: translateY(-50%);
 }
 
 .lightbox-prev {
-  left: -65px;
+  left: -86px;
 }
 
 .lightbox-next {
-  right: -65px;
+  right: -86px;
 }
 
 .lightbox-nav[hidden] {
@@ -997,24 +997,27 @@ a.project {
   }
 
   .lightbox-close {
-    top: -14px;
-    right: -4px;
+    top: -18px;
+    right: -6px;
+    width: 48px;
+    height: 48px;
   }
 
   .lightbox-nav {
-    top: auto;
-    bottom: -58px;
-    width: 44px;
-    height: 44px;
-    transform: none;
+    top: 50%;
+    bottom: auto;
+    width: 54px;
+    height: 54px;
+    font-size: 42px;
+    transform: translateY(-50%);
   }
 
   .lightbox-prev {
-    left: calc(50% - 52px);
+    left: 8px;
   }
 
   .lightbox-next {
-    right: calc(50% - 52px);
+    right: 8px;
   }
 
   .site-footer {
