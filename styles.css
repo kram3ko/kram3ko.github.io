@@ -803,6 +803,16 @@ a.project:hover {
     padding-block: 68px 78px;
   }
 
+  .hero::after {
+    right: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-glow {
+    display: none;
+  }
+
   h1 {
     font-size: 45px;
   }
