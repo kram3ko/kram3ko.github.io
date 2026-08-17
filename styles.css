@@ -527,7 +527,7 @@ a.project {
   cursor: pointer;
 }
 
-a.project:hover {
+.project:hover {
   border-color: rgba(59, 109, 246, 0.35);
   box-shadow: 0 28px 65px rgba(35, 56, 102, 0.14);
   transform: translateY(-5px);
@@ -545,17 +545,23 @@ a.project:hover {
 }
 
 .project-media {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 180px;
   overflow: hidden;
   margin: 0 0 28px;
+  padding: 0;
   border: 1px solid var(--line);
   border-radius: 16px;
   background: #eef2f8;
+  cursor: zoom-in;
 }
 
 .project-media img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 8.5;
+  height: 180px;
   object-fit: cover;
   object-position: top;
   transition: transform 450ms ease;
@@ -565,15 +571,31 @@ a.project:hover {
   transform: scale(1.015);
 }
 
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: var(--line);
+.media-overlay {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 12px;
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(17, 26, 50, 0.88);
+  box-shadow: 0 8px 24px rgba(17, 26, 50, 0.2);
+  font: 700 11px/1 var(--body);
+  backdrop-filter: blur(10px);
 }
 
-.project-gallery img {
-  min-width: 0;
+.media-overlay b {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--navy);
+  background: #fff;
+  font-size: 10px;
 }
 
 .project-topline {
@@ -585,6 +607,101 @@ a.project:hover {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.project-link {
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid transparent;
+  transition: border-color 180ms ease;
+}
+
+.project-link:hover {
+  border-color: currentColor;
+}
+
+.lightbox {
+  width: min(1180px, calc(100% - 40px));
+  max-width: none;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 18px;
+  color: #fff;
+  background: transparent;
+}
+
+.lightbox::backdrop {
+  background: rgba(10, 15, 29, 0.88);
+  backdrop-filter: blur(10px);
+}
+
+.lightbox figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.42);
+}
+
+.lightbox figure img {
+  display: block;
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  background: #eef2f8;
+}
+
+.lightbox figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 18px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lightbox-close,
+.lightbox-nav {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(17, 26, 50, 0.82);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.lightbox-close {
+  top: -18px;
+  right: -18px;
+  width: 42px;
+  height: 42px;
+  font-size: 28px;
+}
+
+.lightbox-nav {
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 36px;
+  transform: translateY(-50%);
+}
+
+.lightbox-prev {
+  left: -65px;
+}
+
+.lightbox-next {
+  right: -65px;
+}
+
+.lightbox-nav[hidden] {
+  display: none;
 }
 
 .project h3 {
@@ -852,12 +969,9 @@ a.project:hover {
     grid-template-columns: 26px 1fr;
   }
 
-  .project-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .project-gallery img:nth-child(2) {
-    display: none;
+  .project-media,
+  .project-media img {
+    height: 125px;
   }
 
   .project h3 {
@@ -876,6 +990,31 @@ a.project:hover {
 
   .contact-list strong {
     font-size: 11px;
+  }
+
+  .lightbox {
+    width: calc(100% - 24px);
+  }
+
+  .lightbox-close {
+    top: -14px;
+    right: -4px;
+  }
+
+  .lightbox-nav {
+    top: auto;
+    bottom: -58px;
+    width: 44px;
+    height: 44px;
+    transform: none;
+  }
+
+  .lightbox-prev {
+    left: calc(50% - 52px);
+  }
+
+  .lightbox-next {
+    right: calc(50% - 52px);
   }
 
   .site-footer {
