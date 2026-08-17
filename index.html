@@ -7,8 +7,8 @@
       name="description"
       content="Volodymyr Vinohradov — Python Backend & AI Engineer building production-ready AI systems, APIs, and integrations."
     />
-    <meta name="theme-color" content="#0b0d12" />
-    <title>Volodymyr Vinohradov — Python Backend & AI Engineer</title>
+    <meta name="theme-color" content="#11151d" />
+    <title>Vinohradov Volodymyr — Python Backend & AI Engineer</title>
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0d12'/%3E%3Ctext x='12' y='45' font-family='Arial' font-size='34' font-weight='700' fill='%23adff2f'%3EVV%3C/text%3E%3C/svg%3E"
@@ -25,15 +25,15 @@
   <body>
     <div class="noise" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Back to top">VV<span>.</span></a>
+      <a class="brand" href="#top" aria-label="Back to top">Vinohradov Volodymyr<span>.</span></a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#work">Work</a>
       </nav>
-      <a class="header-cta" href="https://github.com/kram3ko" target="_blank" rel="noreferrer">
-        GitHub
-        <span aria-hidden="true">↗</span>
+      <a class="header-cta" href="Vinohradov_Volodymyr_CV.pdf" download>
+        Download CV
+        <span aria-hidden="true">↓</span>
       </a>
     </header>
 
@@ -51,15 +51,18 @@
             <a class="button button-secondary" href="https://github.com/kram3ko" target="_blank" rel="noreferrer">
               View GitHub <span>↗</span>
             </a>
+            <a class="button button-secondary" href="Vinohradov_Volodymyr_CV.pdf" download>
+              Download CV <span>↓</span>
+            </a>
           </div>
         </div>
 
         <aside class="profile-card reveal" aria-label="Profile summary">
           <div class="profile-glow"></div>
-          <img src="https://github.com/kram3ko.png?size=360" alt="Volodymyr Vinohradov" />
+          <img src="https://github.com/kram3ko.png?size=360" alt="Vinohradov Volodymyr" />
           <div class="profile-meta">
             <div>
-              <strong>Volodymyr Vinohradov</strong>
+              <strong>Vinohradov Volodymyr</strong>
               <span>Kharkiv, Ukraine</span>
             </div>
             <span class="status-dot" title="Available"></span>
@@ -131,100 +134,177 @@
         </div>
 
         <div class="project-list">
-          <article class="project project-featured reveal">
+          <a
+            class="project project-featured reveal"
+            href="https://github.com/kram3ko/Cognify"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Cognify on GitHub"
+          >
             <div class="project-index">01</div>
             <div class="project-body">
-              <div class="project-topline"><span>AI platform</span><span>Featured</span></div>
+              <div class="project-topline"><span>AI platform</span><span>GitHub ↗</span></div>
               <h3>Cognify</h3>
               <p>
                 An omnichannel platform for creating AI assistants and automating customer
                 communication. Built backend architecture, RAG search, knowledge-base tools,
                 guardrails, and asynchronous channel integrations.
               </p>
-              <div class="tags"><span>Python</span><span>FastAPI</span><span>RAG</span><span>PostgreSQL</span></div>
+              <ul class="project-highlights">
+                <li>Designed the asynchronous backend architecture and real-time communication layer.</li>
+                <li>Built an 8-format knowledge-base pipeline with hybrid BM25 and vector search.</li>
+                <li>Implemented guardrails, automated escalation, and operator workflows.</li>
+              </ul>
+              <p class="stack-line"><strong>Core stack:</strong> FastAPI, SQLAlchemy, PostgreSQL, RedisSearch, Redis Streams, TaskIQ, BGE-M3/TEI, OpenAI, Gemini, Svelte 5, WebSockets, S3, Docker.</p>
+              <div class="tags">
+                <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>Svelte 5</span>
+                <span>PostgreSQL</span><span>RedisSearch</span><span>TaskIQ</span><span>BGE-M3</span>
+                <span>OpenAI</span><span>Gemini</span><span>WebSockets</span><span>Docker</span>
+              </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project project-featured reveal">
+          <a
+            class="project project-featured reveal"
+            href="https://salesdep.ai/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open SalesDep website"
+          >
             <div class="project-index">02</div>
             <div class="project-body">
-              <div class="project-topline"><span>Voice AI</span><span>Featured</span></div>
+              <div class="project-topline"><span>Voice AI</span><span>Live ↗</span></div>
               <h3>SalesDep</h3>
               <p>
                 AI-powered voice and text automation for customer conversations. Developed
                 asynchronous dialogue processing, LLM and STT/TTS integrations, knowledge
                 retrieval, guardrails, and low-latency telephony workflows.
               </p>
-              <div class="tags"><span>LLM</span><span>STT/TTS</span><span>SIP</span><span>asyncio</span></div>
+              <ul class="project-highlights">
+                <li>Achieved approximately 2–3s end-to-end voice response latency across parallel calls.</li>
+                <li>Built streaming Google STT/TTS and Gemini processing without blocking active calls.</li>
+                <li>Migrated FreeSWITCH telephony to Asterisk while preserving SIP and CRM workflows.</li>
+              </ul>
+              <p class="stack-line"><strong>Core stack:</strong> FastAPI, PostgreSQL, Redis, TaskIQ, Gemini, MCP, gRPC, Asterisk, FreeSWITCH, SIP, Google STT/TTS, Speechmatics, WebSockets, Sentry, Docker.</p>
+              <div class="tags">
+                <span>Python</span><span>FastAPI</span><span>Vue 3</span><span>PostgreSQL</span>
+                <span>Redis</span><span>TaskIQ</span><span>Gemini</span><span>MCP</span><span>gRPC</span>
+                <span>Asterisk</span><span>SIP</span><span>Google STT/TTS</span><span>Sentry</span><span>Docker</span>
+              </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project reveal">
+          <a
+            class="project reveal"
+            href="https://github.com/kram3ko/codex_server"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Codex Server on GitHub"
+          >
             <div class="project-index">03</div>
             <div class="project-body">
-              <div class="project-topline"><span>Agentic system</span></div>
+              <div class="project-topline"><span>Agentic system</span><span>GitHub ↗</span></div>
               <h3>Codex Server</h3>
-              <p>Agent orchestration platform for code, browser, and external tools with MCP and RPC integrations.</p>
-              <div class="tags"><span>Python</span><span>MCP</span><span>gRPC</span><span>Playwright</span></div>
+              <p>Multi-user personal AI platform across web, Telegram, and voice with durable streaming turns, memory, uploads, and MCP tools.</p>
+              <ul class="project-highlights">
+                <li>Implemented durable TaskIQ and Redis Streams turns with interrupt, steer, and reconnect.</li>
+                <li>Built HTTP/2 server streaming with Connect-RPC/Protobuf and FastMCP integrations.</li>
+                <li>Added STT/TTS, S3-compatible file delivery, browser tools, and production observability.</li>
+              </ul>
+              <p class="stack-line"><strong>Core stack:</strong> Python 3.14, FastAPI, SQLAlchemy, Svelte 5, Connect-RPC, Protobuf, FastMCP, TaskIQ, PostgreSQL, Redis Streams, MinIO/R2, Traefik, Sentry.</p>
+              <div class="tags">
+                <span>Python 3.14</span><span>FastAPI</span><span>Svelte 5</span><span>Connect-RPC</span>
+                <span>Protobuf</span><span>FastMCP</span><span>TaskIQ</span><span>Redis Streams</span>
+                <span>MinIO</span><span>Traefik</span><span>Sentry</span>
+              </div>
             </div>
-          </article>
+          </a>
 
-          <article class="project reveal">
+          <a
+            class="project reveal"
+            href="https://civicai.pp.ua/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Citizen Connect website"
+          >
             <div class="project-index">04</div>
             <div class="project-body">
-              <div class="project-topline"><span>Digital services</span></div>
+              <div class="project-topline"><span>Digital services</span><span>Live ↗</span></div>
               <h3>Citizen Connect</h3>
-              <p>A citizen-facing digital platform connecting users with services, information, and automated workflows.</p>
-              <div class="tags"><span>Backend</span><span>Integrations</span><span>Automation</span></div>
+              <p>Production civic AI platform providing grounded answers and real-time operator support across public communication channels.</p>
+              <ul class="project-highlights">
+                <li>Connected Telegram, Viber, WhatsApp, Facebook, and Instagram in one platform.</li>
+                <li>Implemented RAG-grounded responses with hybrid retrieval and structured knowledge ingestion.</li>
+                <li>Added automated escalation and real-time handoff from AI to a human operator.</li>
+              </ul>
+              <p class="stack-line"><strong>Core stack:</strong> FastAPI, SQLAlchemy, PostgreSQL, Redis/RedisSearch, TaskIQ, BGE-M3, OpenAI, Gemini, WebSockets, S3, Docker.</p>
+              <div class="tags">
+                <span>FastAPI</span><span>RAG</span><span>Hybrid Search</span><span>PostgreSQL</span>
+                <span>Redis</span><span>WebSockets</span><span>S3</span><span>Docker</span>
+              </div>
             </div>
-          </article>
+          </a>
 
           <article class="project reveal">
             <div class="project-index">05</div>
             <div class="project-body">
-              <div class="project-topline"><span>Commercial platform</span></div>
+              <div class="project-topline"><span>Commercial platform</span><span>Details on request</span></div>
               <h3>Kulinichi</h3>
               <p>Backend development and integrations for a commercial customer-facing digital product.</p>
-              <div class="tags"><span>Python</span><span>API</span><span>Integrations</span></div>
+              <div class="tags"><span>Python</span><span>REST API</span><span>PostgreSQL</span><span>Redis</span><span>Integrations</span><span>Docker</span></div>
             </div>
           </article>
 
           <article class="project reveal">
             <div class="project-index">06</div>
             <div class="project-body">
-              <div class="project-topline"><span>Customer automation</span></div>
+              <div class="project-topline"><span>Customer automation</span><span>Details on request</span></div>
               <h3>Beauty Clinic</h3>
               <p>Digital workflows and backend automation supporting client communication and service operations.</p>
-              <div class="tags"><span>Backend</span><span>Automation</span><span>CRM</span></div>
+              <div class="tags"><span>Python</span><span>Backend</span><span>Automation</span><span>CRM</span><span>Messaging</span><span>Integrations</span></div>
             </div>
           </article>
 
-          <article class="project reveal">
+          <a
+            class="project reveal"
+            href="https://toys-shop.onrender.com/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Toyshop website"
+          >
             <div class="project-index">07</div>
             <div class="project-body">
-              <div class="project-topline"><span>E-commerce</span></div>
+              <div class="project-topline"><span>E-commerce</span><span>Live ↗</span></div>
               <h3>Toyshop</h3>
               <p>Online store with product catalogue, cart, checkout, authentication, payments, and administration tools.</p>
-              <div class="tags"><span>Django</span><span>PostgreSQL</span><span>Stripe</span><span>Docker</span></div>
+              <div class="tags">
+                <span>Python</span><span>Django</span><span>HTMX</span><span>Tailwind CSS</span>
+                <span>PostgreSQL</span><span>Authentication</span><span>Dropbox</span><span>Docker</span>
+              </div>
             </div>
-          </article>
+          </a>
         </div>
       </section>
 
-      <section class="contact section-shell reveal">
+      <section class="contact section-shell reveal" id="contact">
         <div class="contact-copy">
           <span class="section-label">04 / Contact</span>
-          <h2>Have a complex product in mind?</h2>
+          <h2>Let’s build something useful.</h2>
           <p>I’m open to Python Backend and AI Engineering opportunities.</p>
         </div>
-        <a class="contact-link" href="https://github.com/kram3ko" target="_blank" rel="noreferrer">
-          Let’s connect <span>↗</span>
-        </a>
+        <div class="contact-list" aria-label="Contact links">
+          <a href="mailto:vinohradov.volodymyr@gmail.com"><span>Email</span><strong>vinohradov.volodymyr@gmail.com</strong><b>↗</b></a>
+          <a href="https://t.me/krameko" target="_blank" rel="noreferrer"><span>Telegram</span><strong>@krameko</strong><b>↗</b></a>
+          <a href="https://www.linkedin.com/in/volodymyr-vinohradov" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>volodymyr-vinohradov</strong><b>↗</b></a>
+          <a href="tel:+380978425829"><span>Phone</span><strong>+380 97 842 58 29</strong><b>↗</b></a>
+          <a href="https://github.com/kram3ko" target="_blank" rel="noreferrer"><span>GitHub</span><strong>github.com/kram3ko</strong><b>↗</b></a>
+          <a href="Vinohradov_Volodymyr_CV.pdf" download><span>Resume</span><strong>Download CV</strong><b>↓</b></a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer section-shell">
-      <span>© <span id="year"></span> Volodymyr Vinohradov</span>
+      <span>© <span id="year"></span> Vinohradov Volodymyr</span>
       <span>Python Backend & AI Engineer</span>
     </footer>
   </body>
