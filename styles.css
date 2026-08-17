@@ -609,6 +609,11 @@ a.project {
   text-transform: uppercase;
 }
 
+.project-actions {
+  display: inline-flex;
+  gap: 14px;
+}
+
 .project-link {
   position: relative;
   z-index: 2;
